@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="512.0" maxWidth="840.0" prefHeight="482.0" prefWidth="840.0" style="-fx-background-color: D9D9D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerCadastroVendedor">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="459.0" fitWidth="143.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%2075.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="556.0" layoutY="438.0" prefHeight="36.0" prefWidth="269.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="36.0" prefWidth="157.0" style="-fx-background-color: BLACK; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="CANCELAR" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/material-symbols_block.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#btnSalvarAction" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: BLACK; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="SALVAR" textFill="WHITE" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/ion_save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="152.0" layoutY="77.0" prefHeight="195.0" prefWidth="673.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.800048828125" minWidth="10.0" prefWidth="371.800048828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.199951171875" minWidth="10.0" prefWidth="314.199951171875" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txtInserirNomeVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" />
+            <TextField fx:id="txtInserirCpfVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" />
+            <TextField fx:id="txtInserirEmailVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.rowIndex="1" />
+            <TextField fx:id="txtInserireTelefoneVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Nome" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="CPF" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="E-mail" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Telefone" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <TextField fx:id="txtInserirEnderecoVendedor" layoutX="159.0" layoutY="389.0" prefHeight="36.0" prefWidth="674.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" />
+      <GridPane layoutX="211.0" layoutY="272.0" prefHeight="74.0" prefWidth="570.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.59996337890624" minWidth="10.0" prefWidth="254.20001220703125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.2000244140625" minWidth="0.0" prefWidth="94.99998779296874" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.4" minWidth="10.0" prefWidth="265.9999755859375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Data de Nascimento" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dataNascimento" prefHeight="36.0" prefWidth="250.0" style="-fx-border-color: black;" GridPane.valignment="BOTTOM" />
+            <DatePicker fx:id="dataContratacao" prefHeight="36.0" prefWidth="250.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <Label text="Data Contratação" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="167.0" layoutY="358.0" text="Endereço">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

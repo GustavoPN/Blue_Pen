@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="669.0" maxWidth="971.0" prefHeight="669.0" prefWidth="971.0" style="-fx-background-color: D9D9D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerRegistrarCompra">
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="971.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="637.0" fitWidth="207.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%2075.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="637.0" layoutY="632.0" prefHeight="36.0" prefWidth="269.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="36.0" prefWidth="157.0" style="-fx-background-color: BLACK; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="CANCELAR" textFill="WHITE" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/material-symbols_block.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#btnSalvarAction" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: BLACK; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="SALVAR" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/ion_save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="232.0" layoutY="110.0" prefHeight="74.0" prefWidth="674.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.800048828125" minWidth="10.0" prefWidth="91.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.199951171875" minWidth="10.0" prefWidth="190.79996337890623" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="393.39995117187493" minWidth="10.0" prefWidth="393.39995117187493" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="81.6" minHeight="10.0" prefHeight="65.6" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="20.599981689453124" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txtNomeVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="txtCpfVendedor" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+            <Label text="NOME DO VENDEDOR " GridPane.columnIndex="2" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="CPF" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIdVendedor" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="ID" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="573.6929321289062" endY="0.5929023623466492" startX="-100.0" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="238.0" layoutY="401.0" prefHeight="74.0" prefWidth="332.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txtPrecoUnitarioProduto" prefHeight="36.0" prefWidth="674.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="txtQuantidadeProduto" onKeyTyped="#definirPrecoTotal" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="QUANTIDADE" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="PREÇO UN." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="232.0" layoutY="308.0" prefHeight="67.0" prefWidth="675.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.4000244140625" minWidth="10.0" prefWidth="187.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.4000122070313" minWidth="10.0" prefWidth="518.8000000000001" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.40003662109376" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txtCodigoProduto" prefHeight="36.0" prefWidth="247.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="CÓDIGO" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNomeProduto" prefHeight="36.0" prefWidth="449.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+            <Label prefHeight="30.0" prefWidth="224.0" text="NOME DO PRODUTO" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="821.0" layoutY="184.0" text="CLIENTE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="232.0" layoutY="207.0" prefHeight="74.0" prefWidth="674.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.800048828125" minWidth="10.0" prefWidth="91.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.199951171875" minWidth="10.0" prefWidth="190.79996337890623" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.60003662109375" minWidth="10.0" prefWidth="393.39995117187493" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="66.39998779296874" minHeight="10.0" prefHeight="66.39998779296874" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="23.799993896484374" minHeight="1.3999999999999986" prefHeight="7.8000122070312585" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txtNomeCliente" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="txtCpfCnpjCliente" onKeyTyped="#definirCliente" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+            <Label text="CPF / CNPJ" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label text="NOME DO CLIENTE" GridPane.columnIndex="2" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIdCliente" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="ID" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="314.0" layoutY="486.0" prefHeight="67.0" prefWidth="180.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtDescontoProduto" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="DESCONTO" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="272.0" layoutY="575.0" prefHeight="67.0" prefWidth="263.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtPrecoTotalProduto" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100;" GridPane.valignment="BOTTOM" />
+            <Label text="PREÇO TOTAL" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <TableView fx:id="tableRegistrarRelatorio" layoutX="587.0" layoutY="391.0" prefHeight="233.0" prefWidth="369.0">
+        <columns>
+            <TableColumn fx:id="columnIdProduto" prefWidth="68.7999267578125" text="Id Produto" />
+          <TableColumn fx:id="columnNomeProduto" prefWidth="179.20001220703125" text="Nome Produto" />
+          <TableColumn fx:id="columnPrecoProduto" prefWidth="120.00002441406252" text="Preco Produto" />
+        </columns>
+      </TableView>
+      <Label layoutX="793.0" layoutY="80.0" text="VENDEDOR">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="807.0" layoutY="293.0" text="PRODUTO">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPesquisar" layoutX="913.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnPesquisarAction" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../midia/imagemParaMainRegistrarVenda/fa6-solid_magnifying-glass-plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="573.6929321289062" endY="0.5929023623466492" layoutX="333.0" layoutY="281.0" startX="-100.0" />
+   </children>
+</AnchorPane>

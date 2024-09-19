@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="512.0" maxWidth="840.0" prefHeight="512.0" prefWidth="830.0" style="-fx-background-color: D9D9D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerRelatorioVenda">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="465.0" fitWidth="155.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../midia/icons/telaLogin/Untitled/Rectangle%2075.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutY="53.0" prefHeight="431.0" prefWidth="151.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="58.4" minHeight="10.0" prefHeight="43.200018310546874" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="47.19999389648438" minHeight="0.0" prefHeight="31.99998168945313" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.79999999999999" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.79999999999999" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.79999999999999" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.79999999999999" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="160.00001220703126" minHeight="10.0" prefHeight="159.2000244140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.79999999999999" minHeight="0.0" prefHeight="6.399975585937511" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnMenu" mnemonicParsing="false" onAction="#btnMenuAction" style="-fx-background-color: #07073f; -fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black;" text="MENU" textFill="WHITE" />
+            <Button fx:id="btnRegistrarVenda" mnemonicParsing="false" onAction="#btnRegistrarVendaAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #620b0b; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="REGISTRAR VENDA" textFill="WHITE" GridPane.rowIndex="1" />
+            <Button fx:id="btnFornecedores" mnemonicParsing="false" onAction="#btnFornecedoresAction" style="-fx-background-color: #620b0b; -fx-background-radius: 100;" text="FORNECEDORES" textFill="WHITE" GridPane.rowIndex="2" />
+            <Button fx:id="btnProdutos" mnemonicParsing="false" onAction="#btnProdutosAction" style="-fx-background-color: #620b0b; -fx-background-radius: 100;" text="PRODUTOS" textFill="WHITE" GridPane.rowIndex="3" />
+            <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#btnClientesAction" style="-fx-background-color: #620b0b; -fx-background-radius: 100;" text="CLIENTES" textFill="WHITE" GridPane.rowIndex="4" />
+            <Button fx:id="btnVendedores" mnemonicParsing="false" onAction="#btnVendedoresAction" style="-fx-background-color: #620b0b; -fx-background-radius: 100;" text="VENDEDORES" textFill="WHITE" GridPane.rowIndex="5" />
+            <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#btnVoltarAction" style="-fx-background-color: a71313; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="VOLTAR" textFill="WHITE" GridPane.rowIndex="7">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/mdi_arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="206.0" layoutY="124.0" prefHeight="36.0" prefWidth="570.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#btnCadastrarAction" prefHeight="74.0" prefWidth="194.0" style="-fx-background-color: E62020; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="CADASTRAR" textFill="WHITE" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/mingcute_clipboard-fill.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnPesquisar" mnemonicParsing="false" onAction="#btnPesquisarAction" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: E62020; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="PESQUISAR" textFill="WHITE" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../midia/icons/iconParaMultiplasTelasDeAcoes/Untitled%20(1)/ph_magnifying-glass-bold.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField fx:id="txtFileldPesquisar" layoutX="206.0" layoutY="73.0" prefHeight="36.0" prefWidth="570.0" style="-fx-background-color: D9D9D9; -fx-border-color: black; -fx-border-radius: 100;" />
+      <TableView fx:id="tableViewRelatorioVenda" layoutX="151.0" layoutY="168.0" prefHeight="338.0" prefWidth="686.0">
+         <columns>
+            <TableColumn fx:id="columnIdProduto" prefWidth="75.0" text="IdProduto" />
+            <TableColumn fx:id="columnVendedor" prefWidth="153.60003662109375" text="Vendedor" />
+            <TableColumn fx:id="columnNome" prefWidth="122.39996337890625" text="Nome" />
+            <TableColumn fx:id="columnCodigo" minWidth="4.0" prefWidth="108.79998779296875" text="Codigo" />
+            <TableColumn fx:id="columnQuantidade" prefWidth="85.5999755859375" text="Quantidade" />
+            <TableColumn fx:id="columnPrecoTotal" prefWidth="133.5999755859375" text="PrecoTotal" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
